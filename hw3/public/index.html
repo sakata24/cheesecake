@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<!-- Tyler Sakata | CS 341 -->
+	<head>
+		<link rel="stylesheet" href="./stylesheets/style.css">
+		<script 
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+ 		</script>
+		<script src="./javascripts/main.js"></script>
+	</head>
+	<body>
+		<!--top of page, include img-->
+		<header>
+			<h1> Cheesecake Order Form </h1>
+			<img
+				src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg"
+		     		width="300"
+				>
+		</header>
+		<!--form/ordering section. includes radio buttons and multi-line text entry-->
+		<order id="order">
+			<form id="form">
+			<p>Quantity Topping</p>
+				<table>
+					<td><select id="quantity">
+						<option>3</option>
+						<option>2</option>
+						<option>1</option>
+						<option>0</option>
+					</select></td>
+					<td>
+						<label><input type="radio" name="flavor" checked="true"/>Plain</label></p>
+						<label><input type="radio" name="flavor"/>Cherry</label></p>
+						<label><input type="radio" name="flavor"/>Chocolate</label></p>
+					</td>
+				</table>
+
+				<p>Notes:</p>
+				<textarea id="notes" rows="5" cols="60" placeholder="Enter any special instructions here."></textarea><p>
+				<button id="orderbutton">Order</button>
+			</form>
+			<!--bottom part that displays the orders last month-->
+			<summary>
+				<h3>Orders for 
+					<!-- TAKEN FROM w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+					<div class="dropdown">
+						<button id= "monthdrop" class="dropbtn"><b>Jan</b></button>
+						<!-- Dropdown divs -->
+						<div class="dropdown-content">
+							<month>Jan</month>
+							<month>Feb</month>
+							<month>Mar</month>
+							<month>Apr</month>
+							<month>May</month>
+							<month>Jun</month>
+							<month>Jul</month>
+							<month>Aug</month>
+							<month>Sep</month>
+							<month>Oct</month>
+							<month>Nov</month>
+							<month>Dec</month>
+						</div>
+					</div>
+				</h3>
+				<ul>
+					<li>11 cherry</li>
+					<li>17 chocolate</li>
+					<li>31 plain</li>
+				</ul>
+			</summary>
+		</order>
+	</body>
+<html>
